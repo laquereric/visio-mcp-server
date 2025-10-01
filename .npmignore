@@ -1,0 +1,40 @@
+# Source files
+cmd/
+internal/
+*.go
+go.mod
+go.sum
+.goreleaser.yaml
+
+# Development files
+.github/
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Documentation
+docs/
+
+# Tests
+*_test.go
+test/
+
+# Build artifacts
+*.log
+*.tmp
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# CI/CD
+.travis.yml
+.circleci/
+.gitlab-ci.yml
+
+# OS
+.DS_Store
+Thumbs.db

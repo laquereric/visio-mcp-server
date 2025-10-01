@@ -1,0 +1,39 @@
+name: visio-mcp-server
+version: 0.1.0
+description: An MCP server that reads and writes diagram data to MS Visio files
+author: negokaz
+license: MIT
+homepage: https://github.com/negokaz/visio-mcp-server
+
+installation:
+  npm: "@negokaz/visio-mcp-server"
+
+configuration:
+  command: npx
+  args:
+    - "--yes"
+    - "@negokaz/visio-mcp-server"
+  env:
+    VISIO_MCP_MAX_SHAPES: "1000"
+    VISIO_MCP_INCLUDE_HIDDEN: "false"
+
+tools:
+  - name: visio_describe_pages
+    description: List all pages in a Visio file with metadata
+  - name: visio_read_page
+    description: Read shapes and their properties from a specific page
+  - name: visio_list_shapes
+    description: List all shapes on a page with basic information
+  - name: visio_write_shape
+    description: Create or modify shapes on a page
+
+categories:
+  - productivity
+  - file-management
+  - diagrams
+
+tags:
+  - visio
+  - diagrams
+  - mcp
+  - office
